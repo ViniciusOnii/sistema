@@ -1,0 +1,390 @@
+/* ========== RESET E CONFIGURAÇÕES GLOBAIS ========== */
+
+/* Reset básico para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração geral do body com background personalizado */
+body {
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* ========== BARRA DE NAVEGAÇÃO ========== */
+
+/* Container principal da barra de navegação */
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0 20px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* Seção esquerda - Menu de navegação */
+.nav-esquerda {
+    display: flex;
+    gap: 30px;
+}
+
+/* Estilo dos itens de navegação */
+.item-nav {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+/* Efeito hover nos itens de navegação */
+.item-nav:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Seção direita - Informações do usuário */
+.nav-direita {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Nome do usuário */
+.nome-usuario {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Data atual */
+.data-atual {
+    font-size: 14px;
+}
+
+/* ========== CONTAINER PRINCIPAL ========== */
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+}
+
+.logo {
+    text-align: center;
+    color: white;
+}
+
+.logo-icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.fundo-gradiente {
+    background: linear-gradient(to bottom, #ffffff 0%, #f0f7ff 30%, #e6f2ff 70%, #d0e7ff 100%);
+    min-height: 100vh;
+}
+
+/* ========== MODAL/CAIXA DE CONTEÚDO ========== */
+
+.caixa-conteudo {
+    position: fixed;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to bottom, #e6f2ff 0%, #cce0ff 40%, #99c7ff 70%, #66aaff 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    width: 98%;
+    max-width: 1600px;
+    height: 90vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-conteudo.oculto {
+    display: none;
+}
+
+/* Cabeçalho do modal */
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    border-radius: 8px 8px 0 0;
+}
+
+.cabecalho-conteudo h2 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Botão de fechar modal */
+.botao-fechar {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-fechar:hover {
+    color: #333;
+}
+
+/* Corpo do modal */
+.corpo-conteudo {
+    padding: 20px;
+    background: transparent;
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* ========== FORMULÁRIO ========== */
+
+.formulario-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: transparent;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linha-formulario {
+    display: flex;
+    gap: 15px;
+}
+
+.linha-formulario .grupo-campo {
+    flex: 1;
+}
+
+.grupo-campo label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.grupo-campo input,
+.grupo-campo select,
+.grupo-campo textarea {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.grupo-campo input:focus,
+.grupo-campo select:focus,
+.grupo-campo textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+/* ========== BOTÕES ========== */
+
+.botoes-formulario {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.botao {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.botao-primario {
+    background: #4a90e2;
+    color: white;
+}
+
+.botao-primario:hover {
+    background: #357abd;
+}
+
+.botao-secundario {
+    background: #6c757d;
+    color: white;
+}
+
+.botao-secundario:hover {
+    background: #545b62;
+}
+
+.abas-conteudo {
+    display: flex;
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid #ccc;
+}
+
+.aba {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.3);
+    transition: background 0.3s;
+    font-size: 13px;
+    color: #333;
+}
+
+.aba:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.aba.ativo {
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+}
+
+.conteudo-aba {
+    display: none;
+}
+
+.conteudo-aba.ativo {
+    display: block;
+}
+
+/* ========== TAMANHOS DE CAMPOS ========== */
+
+.grupo-campo.pequeno {
+    flex: 0 0 150px;
+}
+
+.grupo-campo.medio {
+    flex: 0 0 250px;
+}
+
+.grupo-campo.grande {
+    flex: 1;
+}
+
+.grupo-campo {
+    position: relative;
+    margin-right: 10px;
+}
+
+.botao-adicionar, .botao-buscar {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #4a90e2;
+    color: white;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.botao-pequeno {
+    margin-left: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* ========== SEÇÃO DE PRECIFICAÇÃO ========== */
+
+.secao-precificacao {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: transparent;
+}
+
+/* ========== CAMPOS DE ENTRADA (DIVs EDITÁVEIS) ========== */
+
+.campo-entrada {
+    padding: 4px 8px;
+    font-size: 14px;
+    min-height: 20px;
+    background: white;
+    border: 1px solid #4a90e2;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: text;
+    transition: border-color 0.3s, background-color 0.3s;
+    outline: none;
+}
+
+.campo-entrada:focus {
+    border-color: #357abd;
+    background: white;
+}
+
+.campo-entrada:empty:before {
+    content: attr(data-placeholder);
+    color: #999;
+    font-style: italic;
+}
+
+.campo-entrada[data-type="number"] {
+    text-align: right;
+}
+
+.campo-entrada[data-type="currency"] {
+    text-align: right;
+}
+
+.campo-entrada[data-type="currency"]:before {
+    content: "R$ ";
+    color: #666;
+}
+
+.grupo-campo label {
+    font-size: 14px;
+    margin-bottom: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.grupo-campo label.obrigatorio {
+    color: #4a90e2;
+    font-weight: bold;
+}
