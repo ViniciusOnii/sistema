@@ -45,102 +45,143 @@
                             </div>
                             <!-- Campo Descrição - Campo obrigatório com tamanho grande -->
                             <div class="grupo-campo grande">
-                                <label class="obrigatorio">Descrição do produto: *</label>
+                                <label class="obrigatorio">Descrição do produto</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="text">Bermuda Masculina Cargo Sarja</div>
                             </div>
                         </div>
 
-                        <!-- Segunda linha de campos -->
+                        <!-- Campos que se organizam automaticamente -->
                         <div class="linha-formulario">
                             <!-- Campo Grupo - Select com placeholder -->
                             <div class="grupo-campo pequeno">
-                                <label>Grupo:</label>
+                                <label>Grupo</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="select" data-placeholder="Selecione o grupo"></div>
                             </div>
                             <!-- Campo NCM/SH - Campo de texto -->
-                            <div class="grupo-campo medio">
-                                <label>NCM/SH:</label>
+                            <div class="grupo-campo pequeno">
+                                <label>NCM/SH</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="text" data-placeholder="Digite o NCM"></div>
                             </div>
                             <!-- Campo Modelo - Select com placeholder -->
                             <div class="grupo-campo pequeno">
-                                <label>Modelo:</label>
+                                <label>Modelo</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="select" data-placeholder="Selecione o modelo"></div>
                             </div>
-                        </div>
-
-                        <!-- Terceira linha de campos -->
-                        <div class="linha-formulario">
                             <!-- Campo Código - Obrigatório com botão de geração automática -->
-                            <div class="grupo-campo pequeno">
-                                <label class="obrigatorio">Código: *</label>
+                            <div class="grupo-campo medio">
+                                <label class="obrigatorio">Código</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="text">1224</div>
-                                <button type="button" class="botao-pequeno">Gerar Código</button>
                             </div>
                             <!-- Campo Unidade - Texto simples -->
                             <div class="grupo-campo pequeno">
-                                <label>Unidade:</label>
+                                <label>Unidade</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="text">UN</div>
                             </div>
                             <!-- Campo Peso - Numérico com decimais -->
                             <div class="grupo-campo pequeno">
-                                <label>Peso/gramas:</label>
+                                <label>Peso/gramas</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="number" data-placeholder="0.000"></div>
                             </div>
-                        </div>
-
-                        <!-- Quarta linha de campos -->
-                        <div class="linha-formulario">
                             <!-- Campo Fornecedor - Select com dados pré-carregados -->
                             <div class="grupo-campo medio">
-                                <label>Fornecedor:</label>
+                                <label>Fornecedor</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="select">Fornecedor ABC</div>
                             </div>
                             <!-- Campo Data da Compra - Tipo data -->
                             <div class="grupo-campo medio">
-                                <label>Data da compra:</label>
+                                <label>Data da compra</label>
                                 <div class="campo-entrada" contenteditable="true" data-type="date">03/01/2018</div>
                             </div>
                         </div>
 
-                        <!-- Seção de precificação e configurações específicas -->
-                        <div class="secao-precificacao">
+                        <!-- Seção de precificação DESKTOP -->
+                        <div class="secao-precificacao secao-desktop">
                             <!-- Linha com campos de estoque, custos e tamanho -->
                             <div class="linha-formulario">
                                 <!-- Campo Estoque Inicial - Obrigatório, numérico -->
                                 <div class="grupo-campo pequeno">
-                                    <label class="obrigatorio">Estoque Inicial: *</label>
+                                    <label class="obrigatorio">Estoque Inicial</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="number">10</div>
                                 </div>
                                 <!-- Campo Custo Unitário - Valor monetário -->
                                 <div class="grupo-campo pequeno">
-                                    <label>Custo Unitário:</label>
+                                    <label>Custo Unitário</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="currency">0.00</div>
                                 </div>
                                 <!-- Campo Custo Total - Valor monetário calculado -->
                                 <div class="grupo-campo pequeno">
-                                    <label>Custo Total:</label>
+                                    <label>Custo Total</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="currency">0.00</div>
                                 </div>
                                 <!-- Campo Tamanho - Obrigatório, select -->
                                 <div class="grupo-campo pequeno">
-                                    <label class="obrigatorio">Tamanho: *</label>
+                                    <label class="obrigatorio">Tamanho</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="select">44</div>
                                 </div>
                                 <!-- Campo Código por Tamanho - Com geração automática -->
                                 <div class="grupo-campo pequeno">
-                                    <label>Cód param Tamanho:</label>
+                                    <label>Cód para Tamanho</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="text">1225</div>
-                                    <button type="button" class="botao-pequeno">Gerar Código</button>
                                 </div>
                             </div>
                             <!-- Segunda linha da seção de precificação -->
                             <div class="linha-formulario">
                                 <!-- Campo Cor - Obrigatório -->
                                 <div class="grupo-campo pequeno">
-                                    <label class="obrigatorio">Cor: *</label>
+                                    <label class="obrigatorio">Cor</label>
                                     <div class="campo-entrada" contenteditable="true" data-type="select">205</div>
                                 </div>
+                                <!-- Campo Quantidade Mínima - Controle de estoque -->
+                                <div class="grupo-campo pequeno">
+                                    <label>Qtde. estoque</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="number">3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Seção de precificação TABLET -->
+                        <div class="secao-precificacao secao-tablet">
+                            <!-- Primeira linha tablet -->
+                            <div class="linha-formulario">
+                                <!-- Campo Estoque Inicial - Obrigatório, numérico -->
+                                <div class="grupo-campo pequeno">
+                                    <label class="obrigatorio">Estoque Inicial</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="number">10</div>
+                                </div>
+                                <!-- Campo Custo Unitário - Valor monetário -->
+                                <div class="grupo-campo pequeno">
+                                    <label>Custo Unitário</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="currency">0.00</div>
+                                </div>
+                            </div>
+                            <!-- Segunda linha tablet -->
+                            <div class="linha-formulario">
+                                <!-- Campo Custo Total - Valor monetário calculado -->
+                                <div class="grupo-campo pequeno">
+                                    <label>Custo Total</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="currency">0.00</div>
+                                </div>
+                                <!-- Campo Tamanho - Obrigatório, select -->
+                                <div class="grupo-campo pequeno">
+                                    <label class="obrigatorio">Tamanho</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="select">44</div>
+                                </div>
+                            </div>
+                            <!-- Terceira linha tablet -->
+                            <div class="linha-formulario">
+                                <!-- Campo Código por Tamanho - Com geração automática -->
+                                <div class="grupo-campo pequeno">
+                                    <label>Cód param Tamanho</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="text">1225</div>
+                                </div>
+                                <!-- Campo Cor - Obrigatório -->
+                                <div class="grupo-campo pequeno">
+                                    <label class="obrigatorio">Cor</label>
+                                    <div class="campo-entrada" contenteditable="true" data-type="select">205</div>
+                                </div>
+                            </div>
+                            <!-- Quarta linha tablet -->
+                            <div class="linha-formulario">
                                 <!-- Campo Quantidade Mínima - Controle de estoque -->
                                 <div class="grupo-campo pequeno">
                                     <label>Qtde. estoque:</label>
@@ -151,108 +192,54 @@
 
                         <!-- Botões de ação do formulário -->
                         <div class="botoes-formulario">
-                            <button type="button" class="botao botao-primario" onclick="saveForm()">Salvar</button>
-                            <button type="button" class="botao botao-secundario" onclick="clearForm()">Limpar</button>
+                            <button type="button" class="botao botao-primario">Salvar</button>
+                            <button type="button" class="botao botao-secundario">Limpar</button>
                         </div>
                     </div>
             </div>
         </div>
     </div>
 
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="rodape-esquerda">
+            JK Iguatemi
+        </div>
+        <div class="rodape-direita">
+            Copyright 2025 - Amissima
+        </div>
+    </footer>
+
     <script>
-        /**
-         * Função para exibir o conteúdo de acordo com a seção selecionada
-         * @param {string} section - Nome da seção a ser exibida
-         */
+        // Função para mostrar/ocultar containers baseado na seção
         function showContent(section) {
             const contentBox = document.getElementById('caixa-conteudo');
             const contentTitle = document.getElementById('titulo-conteudo');
-            const contentBody = document.getElementById('corpo-conteudo');
 
-            // Remove a classe 'oculto' para mostrar o modal
+            // Mostra o container
             contentBox.classList.remove('oculto');
 
-            // Switch para definir o conteúdo baseado na seção
+            // Define o título baseado na seção
             switch(section) {
                 case 'cadastros':
                     contentTitle.textContent = 'Cadastro de Produto';
-                    // O formulário já está no HTML, não precisa ser inserido
                     break;
                 case 'vendas':
                     contentTitle.textContent = 'Vendas';
-                    contentBody.innerHTML = '<p>Área de vendas em desenvolvimento...</p>';
                     break;
                 case 'faturamento':
                     contentTitle.textContent = 'Faturamento';
-                    contentBody.innerHTML = '<p>Área de faturamento em desenvolvimento...</p>';
                     break;
                 case 'relatorios':
                     contentTitle.textContent = 'Relatórios';
-                    contentBody.innerHTML = '<p>Área de relatórios em desenvolvimento...</p>';
                     break;
             }
         }
 
-        /**
-         * Função para ocultar o modal de conteúdo
-         */
+        // Função para fechar o container
         function hideContent() {
             document.getElementById('caixa-conteudo').classList.add('oculto');
         }
-
-        /**
-         * Função para limpar todos os campos do formulário
-         * Reseta os valores para o padrão de acordo com o tipo de campo
-         */
-        function clearForm() {
-            const fields = document.querySelectorAll('.campo-entrada');
-            fields.forEach(field => {
-                // Campos numéricos e de moeda recebem "0.00", outros ficam vazios
-                if (field.dataset.type === 'currency' || field.dataset.type === 'number') {
-                    field.textContent = '0.00';
-                } else {
-                    field.textContent = '';
-                }
-            });
-        }
-
-        /**
-         * Função para salvar os dados do formulário
-         * Coleta todos os valores dos campos e exibe no console
-         */
-        function saveForm() {
-            const formData = {};
-            const fields = document.querySelectorAll('.campo-entrada');
-
-            // Itera por todos os campos para coletar os dados
-            fields.forEach((field, index) => {
-                const label = field.parentElement.querySelector('label').textContent.replace(':', '').replace('*', '').trim();
-                formData[label] = field.textContent;
-            });
-
-            // Exibe os dados coletados
-            console.log('Dados do formulário:', formData);
-            alert('Dados salvos! Verifique o console para detalhes.');
-        }
-
-        /**
-         * Configuração inicial da página e eventos
-         * Executa quando o DOM estiver totalmente carregado
-         */
-        document.addEventListener('DOMContentLoaded', function() {
-            // Seleciona campos numéricos e de moeda para validação
-            const numberFields = document.querySelectorAll('.campo-entrada[data-type="number"], .campo-entrada[data-type="currency"]');
-
-            // Adiciona validação em tempo real para campos numéricos
-            numberFields.forEach(field => {
-                field.addEventListener('input', function() {
-                    // Permitir apenas números e pontos/vírgulas para decimais
-                    let value = this.textContent.replace(/[^\d.,]/g, '');
-                    this.textContent = value;
-                });
-            });
-        });
-
     </script>
 </body>
 </html>
